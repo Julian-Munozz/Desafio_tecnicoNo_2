@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+
+:root {
+  --fondo-principal: #F8F6F3;
+  --texto-oscuro: #181818;
+  --acento: #E0D6C3;
+  --acento-hover: #CFC6B8;
+  --blanco: #fff;
+  --negro: #181818;
+  --gris: #EAE7DF;
+  --sombra: 0 2px 24px 
+  --sombra-hover: 0 8px 32px 
+}
+
+body {
+  font-family: 'Open Sans', Arial;
+  background: var(--fondo-principal);
+  color: var(--texto-oscuro);
+  font-size: 17px;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--texto-oscuro);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/*----- HEADER -----*/
+header {
+  background: var(--blanco);
+  color: var(--texto-oscuro);
+  padding: 40px 0 24px 0;
+  text-align: center;
+  border-bottom: 5px solid var(--gris);
+  box-shadow: var(--sombra);
+}
+
+header p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--acento);
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f3f3f3;
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--texto-oscuro);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+nav a:hover {
+  color: var(--acento-hover);
+}
+
+/*----- MAIN -----*/
+/* Secciones */
+section {
+  padding: 40px 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  margin-bottom: 32px;
+}
+
+/* Proyectos */
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.proyecto {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background-color: var(--blanco);
+  padding: 24px 16px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.proyecto img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0;
+  box-shadow: 0 1px 6px rgba(24, 24, 24, 0.06);
+  flex-shrink: 0;
+}
+
+/* Habilidades */
+ul.habilidades {
+  list-style: disc inside;
+  padding-left: 18px;
+  margin-top: 16px;
+  font-size: 17px;
+}
+
+/* Formulario de contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 14px 32px;
+  border: 2px solid var(--acento);
+  background: var(--acento);
+  color: var(--texto-oscuro);
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 1px 6px;
+}
+
+/*----- FOOTER -----*/              
+footer {
+  background-color: var(--footer-fondo);
+  color: var(--texto-oscuro);
+  text-align: center;
+  padding: 19px;
+  margin-top: 40px;
+  font-size: 17px;
+  border-radius: 0  12px 12px;
+}
+
